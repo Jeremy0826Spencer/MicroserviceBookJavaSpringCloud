@@ -1,0 +1,83 @@
+2024-11-02 13:27:43 [main] INFO  c.south.DiscoveryServerApplication - Starting DiscoveryServerApplication using Java 17.0.8 with PID 24964 (C:\Users\spenc\Desktop\ProjectMicro\Discovery-Server\target\classes started by spenc in C:\Users\spenc\Desktop\ProjectMicro\Discovery-Server)
+2024-11-02 13:27:43 [main] DEBUG c.south.DiscoveryServerApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-02 13:27:43 [main] INFO  c.south.DiscoveryServerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-02 13:27:44 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-02 13:27:44 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-02 13:27:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2024-11-02 13:27:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-02 13:27:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-02 13:27:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-02 13:27:45 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-11-02 13:27:45 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-11-02 13:27:45 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-11-02 13:27:45 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-11-02 13:27:48 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-02 13:27:48 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-11-02 13:27:48 [main] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2024-11-02 13:27:48 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1730572068998 with initial instances count: 0
+2024-11-02 13:27:49 [main] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2024-11-02 13:27:49 [main] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2024-11-02 13:27:49 [main] INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2024-11-02 13:27:49 [main] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2024-11-02 13:27:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2024-11-02 13:27:49 [Thread-9] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2024-11-02 13:27:49 [Thread-9] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2024-11-02 13:27:49 [Thread-9] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2024-11-02 13:27:50 [main] INFO  c.south.DiscoveryServerApplication - Started DiscoveryServerApplication in 8.753 seconds (process running for 9.404)
+2024-11-02 13:27:50 [main] INFO  c.south.DiscoveryServerApplication - Discovery Server Application Started Successfully
+2024-11-02 13:28:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:29:01 [http-nio-8761-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02 13:29:01 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY-SERVICE/localhost:gateway-service:8080 with status UP (replication=false)
+2024-11-02 13:29:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2024-11-02 13:30:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:31:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2024-11-02 13:32:04 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance LOCATION-SERVICE/localhost:location-service:8082 with status UP (replication=false)
+2024-11-02 13:32:32 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance INVENTORY-SERVICE/localhost:inventory-service:8083 with status UP (replication=false)
+2024-11-02 13:32:40 [http-nio-8761-exec-2] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOK-SERVICE/localhost:book-service:8081 with status UP (replication=false)
+2024-11-02 13:32:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:33:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:34:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2024-11-02 13:35:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2024-11-02 13:36:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2024-11-02 13:37:49 [Eureka-PeerNodesUpdater] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2024-11-02 13:37:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2024-11-02 13:38:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2024-11-02 13:39:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2024-11-02 13:40:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2024-11-02 13:41:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:42:49 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 0
+2024-11-02 13:42:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2024-11-02 13:43:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2024-11-02 13:44:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2024-11-02 13:45:19 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOK-SERVICE/localhost:book-service:8081 with status DOWN (replication=false)
+2024-11-02 13:45:23 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance BOOK-SERVICE/localhost:book-service:8081 (replication=false)
+2024-11-02 13:45:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2024-11-02 13:46:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2024-11-02 13:47:49 [Eureka-PeerNodesUpdater] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2024-11-02 13:47:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:48:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2024-11-02 13:49:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:50:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2024-11-02 13:51:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2024-11-02 13:52:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:53:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:54:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2024-11-02 13:55:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:56:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2024-11-02 13:57:49 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 0
+2024-11-02 13:57:49 [Eureka-PeerNodesUpdater] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2024-11-02 13:57:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2024-11-02 13:58:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 13:59:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2024-11-02 14:00:49 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2024-11-02 14:01:17 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance INVENTORY-SERVICE/localhost:inventory-service:8083 with status DOWN (replication=false)
+2024-11-02 14:01:21 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance INVENTORY-SERVICE/localhost:inventory-service:8083 (replication=false)
+2024-11-02 14:01:21 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance LOCATION-SERVICE/localhost:location-service:8082 with status DOWN (replication=false)
+2024-11-02 14:01:23 [http-nio-8761-exec-1] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY-SERVICE/localhost:gateway-service:8080 with status DOWN (replication=false)
+2024-11-02 14:01:24 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance LOCATION-SERVICE/localhost:location-service:8082 (replication=false)
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-11-02 14:01:25 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

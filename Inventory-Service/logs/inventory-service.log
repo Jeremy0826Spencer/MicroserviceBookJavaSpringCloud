@@ -1,0 +1,907 @@
+2024-11-02T13:32:19.758-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.south.InventoryServiceApplication    : Starting InventoryServiceApplication using Java 17.0.8 with PID 31476 (C:\Users\spenc\Desktop\ProjectMicro\Inventory-Service\target\classes started by spenc in C:\Users\spenc\Desktop\ProjectMicro\Inventory-Service)
+2024-11-02T13:32:19.770-05:00 DEBUG 31476 --- [inventory-service] [restartedMain] com.south.InventoryServiceApplication    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-02T13:32:19.772-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.south.InventoryServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T13:32:22.722-05:00  WARN 31476 --- [inventory-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-02T13:32:22.729-05:00  WARN 31476 --- [inventory-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-02T13:32:23.311-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T13:32:23.312-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-02T13:32:23.379-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T13:32:23.760-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T13:32:23.833-05:00  INFO 31476 --- [inventory-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T13:32:23.884-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T13:32:24.589-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T13:32:24.846-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e87e95a
+2024-11-02T13:32:24.848-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T13:32:25.759-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T13:32:26.459-05:00  WARN 31476 --- [inventory-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02T13:32:26.756-05:00  WARN 31476 --- [inventory-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-11-02T13:32:31.095-05:00  WARN 31476 --- [inventory-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-02T13:32:31.434-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-02T13:32:31.445-05:00  INFO 31476 --- [inventory-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T13:32:31.485-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-02T13:32:31.485-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-02T13:32:31.486-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-02T13:32:31.486-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-02T13:32:31.486-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-02T13:32:31.486-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-02T13:32:31.486-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-02T13:32:32.041-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-02T13:32:32.044-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-02T13:32:32.046-05:00  INFO 31476 --- [inventory-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-02T13:32:32.048-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1730572352048 with initial instances count: 2
+2024-11-02T13:32:32.064-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1730572352064, current=UP, previous=STARTING]
+2024-11-02T13:32:32.068-05:00  INFO 31476 --- [inventory-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:8083: registering service...
+2024-11-02T13:32:32.109-05:00  INFO 31476 --- [inventory-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:8083 - registration status: 204
+2024-11-02T13:32:33.362-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-11-02T13:32:33.480-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:33.480-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:33.480-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572353479
+2024-11-02T13:32:34.019-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2024-11-02T13:32:34.023-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T13:32:34.023-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T13:32:34.024-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T13:32:34.055-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:34.108-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:34.168-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:34.169-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:34.169-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572354168
+2024-11-02T13:32:34.194-05:00  INFO 31476 --- [inventory-service] [restartedMain] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-1, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:34.196-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-1, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T13:32:34.196-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-1, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T13:32:34.201-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T13:32:34.202-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T13:32:34.202-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-02T13:32:34.202-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T13:32:34.206-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-1 unregistered
+2024-11-02T13:32:34.360-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:34.364-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:34.388-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:34.388-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:34.388-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572354388
+2024-11-02T13:32:34.401-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Subscribed to topic(s): book-deleted-topic
+2024-11-02T13:32:34.463-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:34.464-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-11-02T13:32:34.467-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:34.468-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:34.468-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572354467
+2024-11-02T13:32:34.469-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2024-11-02T13:32:34.471-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] (Re-)joining group
+2024-11-02T13:32:34.510-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2024-11-02T13:32:34.511-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T13:32:34.511-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T13:32:34.511-05:00  INFO 31476 --- [inventory-service] [kafka-admin-client-thread | adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T13:32:34.514-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:34.514-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:34.518-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Request joining group due to: need to re-join with the given member-id: consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2-433ddbac-7bc1-4511-95f2-c4786651fd97
+2024-11-02T13:32:34.518-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] (Re-)joining group
+2024-11-02T13:32:34.530-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:34.531-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:34.531-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572354530
+2024-11-02T13:32:34.575-05:00  INFO 31476 --- [inventory-service] [restartedMain] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-3, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:34.580-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-3, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T13:32:34.581-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-3, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T13:32:34.582-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T13:32:34.582-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T13:32:34.582-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-02T13:32:34.582-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T13:32:34.585-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-3 unregistered
+2024-11-02T13:32:34.597-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:34.598-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:34.608-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:34.608-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:34.608-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572354608
+2024-11-02T13:32:34.626-05:00  INFO 31476 --- [inventory-service] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Subscribed to topic(s): branch-deleted-topic
+2024-11-02T13:32:34.694-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:34.695-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2024-11-02T13:32:34.696-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] (Re-)joining group
+2024-11-02T13:32:34.703-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Request joining group due to: need to re-join with the given member-id: consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4-bb37483d-3ae1-493b-9332-900a2dc9991d
+2024-11-02T13:32:34.704-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] (Re-)joining group
+2024-11-02T13:32:34.742-05:00  INFO 31476 --- [inventory-service] [restartedMain] com.south.InventoryServiceApplication    : Started InventoryServiceApplication in 16.56 seconds (process running for 17.115)
+2024-11-02T13:32:35.672-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:35.672-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-11-02T13:32:35.673-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:35.673-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-02T13:32:35.679-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:35.679-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:35.679-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572355679
+2024-11-02T13:32:35.679-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-02T13:32:35.680-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-02T13:32:35.680-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1730572355679
+2024-11-02T13:32:35.694-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:35.695-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Cluster ID: 09HR8_oRT2e_OiPjEgcRkA
+2024-11-02T13:32:35.736-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2024-11-02T13:32:35.738-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2024-11-02T13:32:35.758-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Found no committed offset for partition book-deleted-topic-0
+2024-11-02T13:32:35.758-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Found no committed offset for partition branch-deleted-topic-0
+2024-11-02T13:32:37.539-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Successfully joined group with generation Generation{generationId=1, memberId='consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2-433ddbac-7bc1-4511-95f2-c4786651fd97', protocol='range'}
+2024-11-02T13:32:37.543-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Finished assignment for group at generation 1: {consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2-433ddbac-7bc1-4511-95f2-c4786651fd97=Assignment(partitions=[book-deleted-topic-0])}
+2024-11-02T13:32:37.576-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Successfully synced group in generation Generation{generationId=1, memberId='consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2-433ddbac-7bc1-4511-95f2-c4786651fd97', protocol='range'}
+2024-11-02T13:32:37.576-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Notifying assignor about the new Assignment(partitions=[book-deleted-topic-0])
+2024-11-02T13:32:37.578-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Adding newly assigned partitions: book-deleted-topic-0
+2024-11-02T13:32:37.580-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Found no committed offset for partition book-deleted-topic-0
+2024-11-02T13:32:37.585-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Found no committed offset for partition book-deleted-topic-0
+2024-11-02T13:32:37.591-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Resetting offset for partition book-deleted-topic-0 to position FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2024-11-02T13:32:37.711-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Successfully joined group with generation Generation{generationId=1, memberId='consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4-bb37483d-3ae1-493b-9332-900a2dc9991d', protocol='range'}
+2024-11-02T13:32:37.711-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Finished assignment for group at generation 1: {consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4-bb37483d-3ae1-493b-9332-900a2dc9991d=Assignment(partitions=[branch-deleted-topic-0])}
+2024-11-02T13:32:37.715-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Successfully synced group in generation Generation{generationId=1, memberId='consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4-bb37483d-3ae1-493b-9332-900a2dc9991d', protocol='range'}
+2024-11-02T13:32:37.716-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Notifying assignor about the new Assignment(partitions=[branch-deleted-topic-0])
+2024-11-02T13:32:37.716-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Adding newly assigned partitions: branch-deleted-topic-0
+2024-11-02T13:32:37.718-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Found no committed offset for partition branch-deleted-topic-0
+2024-11-02T13:32:37.721-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Found no committed offset for partition branch-deleted-topic-0
+2024-11-02T13:32:37.725-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Resetting offset for partition branch-deleted-topic-0 to position FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2024-11-02T13:37:31.503-05:00  INFO 31476 --- [inventory-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T13:41:34.580-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Node -1 disconnected.
+2024-11-02T13:41:35.149-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Node -1 disconnected.
+2024-11-02T13:41:35.870-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Node -1 disconnected.
+2024-11-02T13:41:35.870-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Node -1 disconnected.
+2024-11-02T13:42:31.513-05:00  INFO 31476 --- [inventory-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T13:47:31.527-05:00  INFO 31476 --- [inventory-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T13:51:34.693-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Node -1 disconnected.
+2024-11-02T13:51:34.787-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Node -1 disconnected.
+2024-11-02T13:51:35.983-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-5, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Node -1 disconnected.
+2024-11-02T13:51:35.983-05:00  INFO 31476 --- [inventory-service] [pool-4-thread-2] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-6, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Node -1 disconnected.
+2024-11-02T13:52:31.529-05:00  INFO 31476 --- [inventory-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T13:57:31.543-05:00  INFO 31476 --- [inventory-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-02T14:01:17.295-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1730574077295, current=DOWN, previous=UP]
+2024-11-02T14:01:17.295-05:00  INFO 31476 --- [inventory-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:8083: registering service...
+2024-11-02T14:01:17.301-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Revoke previously assigned partitions book-deleted-topic-0
+2024-11-02T14:01:17.303-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Member consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2-433ddbac-7bc1-4511-95f2-c4786651fd97 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-02T14:01:17.303-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.303-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.303-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Unsubscribed all topics or patterns and assigned partitions
+2024-11-02T14:01:17.304-05:00  INFO 31476 --- [inventory-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:8083 - registration status: 204
+2024-11-02T14:01:17.304-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.304-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2, groupId=anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.753-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T14:01:17.753-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T14:01:17.753-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-02T14:01:17.753-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T14:01:17.756-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2-2 unregistered
+2024-11-02T14:01:17.758-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='book-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : anonymous.1cb1d173-d798-406d-8c84-239f23d7e8d2: Consumer stopped
+2024-11-02T14:01:17.762-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Revoke previously assigned partitions branch-deleted-topic-0
+2024-11-02T14:01:17.762-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Member consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4-bb37483d-3ae1-493b-9332-900a2dc9991d sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-02T14:01:17.763-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.763-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.763-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Unsubscribed all topics or patterns and assigned partitions
+2024-11-02T14:01:17.763-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.763-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4, groupId=anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511] Request joining group due to: consumer pro-actively leaving the group
+2024-11-02T14:01:17.890-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-02T14:01:17.890-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-02T14:01:17.890-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-02T14:01:17.890-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-02T14:01:17.892-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511-4 unregistered
+2024-11-02T14:01:17.893-05:00  INFO 31476 --- [inventory-service] [KafkaConsumerDestination{consumerDestinationName='branch-deleted-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : anonymous.88c51b9b-be9a-45e0-a7bb-fe1bd23db511: Consumer stopped
+2024-11-02T14:01:18.104-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T14:01:18.107-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T14:01:18.108-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-02T14:01:21.116-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-02T14:01:21.133-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:8083 - deregister  status: 200
+2024-11-02T14:01:21.133-05:00  INFO 31476 --- [inventory-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
