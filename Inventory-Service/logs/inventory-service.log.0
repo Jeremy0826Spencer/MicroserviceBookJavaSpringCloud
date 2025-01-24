@@ -1,0 +1,4 @@
+[2025-01-23 16:59:00.902] - 13680 INFO [restartedMain] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2025-01-23 16:59:00.909] - 13680 INFO [restartedMain] --- org.apache.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.30]
+[2025-01-23 16:59:01.042] - 13680 INFO [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
+[2025-01-23 17:02:02.492] - 13680 INFO [http-nio-8083-exec-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
