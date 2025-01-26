@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway-service-deployment
+  labels:
+    app: gateway-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gateway-service
+  template:
+    metadata:
+      labels:
+        app: gateway-service
+    spec:
+      containers:
+        - name: gateway-service
+          image: your-dockerhub-username/gateway-service:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: GATEWAY_CORS_ALLOWED_ORIGINS
+              value: "http://your-frontend-domain.com" # Replace with your actual frontend domain
+          volumeMounts:
+            - name: config-volume
+              mountPath: /config
+              subPath: application.yml
+              readOnly: true
+      volumes:
+        - name: config-volume
+          configMap:
+            name: gateway-service-config

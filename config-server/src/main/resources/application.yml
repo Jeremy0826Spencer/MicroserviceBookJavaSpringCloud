@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: docker
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/Jeremy0826Spencer/spring_config_git_book_micro.git" # Your Git repository
+          clone-on-start: true # Ensures repository is cloned during startup
+          default-label: main # Specify the default branch, typically "main" or "master"

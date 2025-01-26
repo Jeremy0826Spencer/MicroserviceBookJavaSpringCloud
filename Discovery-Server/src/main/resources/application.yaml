@@ -1,0 +1,40 @@
+# Server Configuration
+server:
+  port: 8761
+
+# Spring Configuration
+spring:
+  application:
+    name: discovery-server
+
+  eureka:
+    client:
+      register-with-eureka: false
+      fetch-registry: false
+    server:
+      enable-self-preservation: false
+    instance:
+      hostname: discovery-server
+
+# Actuator Endpoints Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com:
+      south: DEBUG
+    org:
+      springframework: WARN
+  file:
+    name: /dev/stdout
