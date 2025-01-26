@@ -96,6 +96,7 @@ public class InventoryServiceImpl implements InventoryService {
         return updatedInventory;
     }
 
+
     @Override
     public void deleteInventory(Long id) {
         logger.info("Deleting inventory with ID: {}", id);

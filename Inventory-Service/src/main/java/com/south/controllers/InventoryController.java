@@ -46,11 +46,19 @@ public class InventoryController {
         return ResponseEntity.ok(inventory);
     }
 
-    @GetMapping("/branch/{branchId}")
+    @GetMapping("/branch/branch/{branchId}")
     public ResponseEntity<List<Inventory>> getInventoryByBranchId(@PathVariable Long branchId) {
         logger.info("Fetching inventory for branch ID: {}", branchId);
         List<Inventory> inventories = inventoryService.getInventoryByBranchId(branchId);
         logger.info("Returning {} inventories for branch ID: {}", inventories.size(), branchId);
+        return ResponseEntity.ok(inventories);
+    }
+
+    @GetMapping("/branch/book/{bookId}")
+    public ResponseEntity<List<Inventory>> getInventoryByBookId(@PathVariable Long bookId) {
+        logger.info("Fetching inventory for book ID: {}", bookId);
+        List<Inventory> inventories = inventoryService.getInventoryByBookId(bookId);
+        logger.info("Returning {} inventories for branch ID: {}", inventories.size(), bookId);
         return ResponseEntity.ok(inventories);
     }
 
